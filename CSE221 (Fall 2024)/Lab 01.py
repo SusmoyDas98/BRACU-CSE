@@ -26,6 +26,8 @@ with open('input1b.txt','r') as file1, open('output1b.txt', 'w') as file2:
         elif lst[2] == "/":
             file2.write(f"The result of {int(lst[1].strip())} + {int(lst[3].strip())} is {int(lst[1].strip())/int(lst[3].strip())}\n")
 
+#------------------------------------------------------------------------------------------------------------------------------
+
 
 # Task 2
 def bubbleSort(arr):
@@ -44,6 +46,9 @@ with open('input2.txt','r') as file1, open('output2.txt', 'w') as file2:
     arr = list(map(str, arr))
     file2.write(f"{' '.join(arr)}")
 
+#------------------------------------------------------------------------------------------------------------------------------
+
+
 # Task 3
 def selection_sort(arr1, arr2):
     for i in range(len(arr1)):
@@ -59,6 +64,9 @@ with open('input3.txt', 'r') as file1, open('output3.txt', 'w') as file2:
     selection_sort(arr2, arr1)
     for i in range(len(arr1)):
         file2.write(f"ID: {arr1[i]} Mark: {arr2[i]}\n")
+
+#------------------------------------------------------------------------------------------------------------------------------
+
 
 #Task 4
 def sorting(arr):
