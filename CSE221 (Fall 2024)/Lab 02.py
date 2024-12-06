@@ -18,6 +18,9 @@ with  open('input1.txt','r') as file1, open('output1.txt', 'w') as file2:
     if not found:
         file2.write(f"IMPOSSIBLE")
 
+#------------------------------------------------------------------------------------------------------------------------------
+
+
 #Task 2
 #A
 with  open('input2.txt','r') as file1, open('output2.txt', 'w') as file2:
@@ -55,6 +58,7 @@ with  open('input2.txt','r') as file1, open('output2.txt', 'w') as file2:
             j+=1
     file2.write(f"{' '.join(final)}")
 
+#------------------------------------------------------------------------------------------------------------------------------
 
 
 #Task 3
@@ -75,6 +79,9 @@ with open('input3.txt','r') as file1, open('output3.txt','w') as file2:
     file2.write(f"{len(added)-1}\n")
     for i in tasks:
         file2.write(f"{i} \n")
+
+#------------------------------------------------------------------------------------------------------------------------------
+
 
 #Task 4
 # A
