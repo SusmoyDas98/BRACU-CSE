@@ -1,4 +1,4 @@
-#Task 1
+# Task 1
 def merge(a, b):
     i, j = 0, 0
     final = []
@@ -32,6 +32,7 @@ with open('input1.txt', 'r') as file1,open('output1.txt','w') as file2:
     for i in lst1:
         file2.write(f"{i} ")
 
+#------------------------------------------------------------------------------------------------------------------------------
 
 #Task 2
 def maximum(arr):
@@ -48,10 +49,11 @@ with open('input2.txt', 'r') as file1,open('output2.txt','w') as file2:
     largest = maximum(lst)
     file2.write(f"{largest[0]}")
 
-# The Time Complexity of this code is O(n)
+''' The Time Complexity of this code is O(n)'''
 
+#------------------------------------------------------------------------------------------------------------------------------
 
-#Task 3
+# Task 3
 def counter(a, b):
     i, j = 0, 0
     final = []
@@ -88,32 +90,36 @@ with open('input3.txt', 'r') as file1,open('output3.txt','w') as file2:
     lst1 = finder(lst)
     file2.write(f"{count}")
 
+#------------------------------------------------------------------------------------------------------------------------------
+
 #Task 4
-def value_finder(arr1, arr2):
-    i,j = 0,0
-    while i<len(arr1) and j<len(arr2):
-        a = arr1[i] + arr2[j]**2
-        global value
-        value = max(value,a)
-        if arr1[i]<=arr2[j]:
-            i+=1
+def max_value_finder(left, right):
+    i,j = 0, 0
+    l = max(left)
+    while j<len(right):
+        a = l + right[j]**2
+        global max_val
+        if max_val<a:
+            max_val = a
+            j+=1
         else:
             j+=1
-    return arr1+arr2
+    return left+right
 def maximizer(arr):
     if len(arr) <= 1:
         return arr
-    mid = len(arr) // 2
-    a1 = maximizer(arr[:mid])
-    a2 = maximizer(arr[mid:])
-    return value_finder(a1,a2)
+    mid = len(arr)//2
+    left_subarray = maximizer(arr[:mid])
+    right_subarray = maximizer(arr[mid:])
+    return max_value_finder(left_subarray, right_subarray)
 with open('input4.txt', 'r') as file1,open('output4.txt','w') as file2:
     import math
     N, lst = file1.readlines()
     arr = [int(i) for i in lst.strip().split()]
-    value = -math.inf
+    max_val = -math.inf
     maximizer(arr)
-    file2.write(f"{value}")
+    
+#------------------------------------------------------------------------------------------------------------------------------
 
 #Task 5
 def partition(arr, start, end):
@@ -137,6 +143,7 @@ with open('input5.txt', 'r') as file1,open('output5.txt','w') as file2:
     for i in arr:
         file2.write(f"{i} ")
 
+#------------------------------------------------------------------------------------------------------------------------------
 
 #Task 6
 def partition(arr, start, end):
