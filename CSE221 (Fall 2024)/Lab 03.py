@@ -36,12 +36,11 @@ with open('input1.txt', 'r') as file1,open('output1.txt','w') as file2:
 #Task 2
 def maximum(arr):
     if len(arr) <= 1:
-        return arr
-    else:
-        mid = len(arr)//2
-        a1 = maximum(arr[:mid])
-        a2 = maximum(arr[mid:])
-        return max(a1,a2)
+        return arr[0]
+    mid = len(arr)//2
+    left_val = maximum(arr[:mid])
+    right_val = maximum(arr[mid:])
+    return max(left_val, right_val)
 
 with open('input2.txt', 'r') as file1,open('output2.txt','w') as file2:
     N, lst = file1.readlines()
