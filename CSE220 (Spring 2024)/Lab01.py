@@ -31,6 +31,7 @@ pokemon_2 = np.array([2, 27, 7, 12, None])
 returned_value =mergeLineup(pokemon_1, pokemon_2)
 print(f'Task 1: {returned_value}') # This should print [4,17,6,27,2]
 
+#------------------------------------------------------------------------------------------------------------------------------
 
 # Task 02: Discard Cards
 def leftshift(array, indx):
@@ -58,9 +59,9 @@ cards = np.array([5,5,5,0,0])
 returned_value = discardCards(cards, 5)
 print(f'Task 2: {returned_value}') # This should print [5,0,0,0,0]
 
+#------------------------------------------------------------------------------------------------------------------------------
 
 # Task 03: DUBER Fare Splitting
-#[60, 150, 60, 30, 120, 30]
 def findGroups(money, fare):
     arr = np.array([False]*len(money))
     group = 1
@@ -106,6 +107,8 @@ findGroups(money, fare) # This should print
 # Group 1 : 60, 120
 # Group 2 : 30, 150
 # Ungrouped : 30 60
+
+#------------------------------------------------------------------------------------------------------------------------------
 
 # Task 04: Get Those Hobbies
 def analyzeHobbies(*participants): #(* arguments) is used for variable number of parameters
@@ -175,6 +178,7 @@ analyzeHobbies(participant_1, participant_2) #This should print
 #1 participant(s) like(s) Singing.
 #1 participant(s) like(s) Painting.
 
+#------------------------------------------------------------------------------------------------------------------------------
 
 # Bonus Ungraded Task: Look and Say
 def look_and_say(arr):
@@ -204,8 +208,9 @@ print(f'Bonus Task: {returned_value}') # This should print [1,1,1,3,2,1,3,2,1,1]
 #Hint: The size of the new array will never be more than 100.
 #[You need not worry about the extra zeroes at the end of your resulting array]
 
+#------------------------------------------------------------------------------------------------------------------------------
 
-For Assignment Part-1, you can create new code cells in the below and write your codes there. Also you should write driver codes to test your code for part-1.
+'''For Assignment Part-1, you can create new code cells in the below and write your codes there. Also you should write driver codes to test your code for part-1.'''
 
 #Assignment Part-1
 #Write 3 methods and driver codes for this part.
