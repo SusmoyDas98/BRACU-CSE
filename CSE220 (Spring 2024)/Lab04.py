@@ -1,6 +1,8 @@
 #Assignment 4
 import numpy as np
 
+#------------------------------------------------------------------------------------------------------------------------------
+
 #Assignment Part 1
 class Patient:
   def __init__(self, id, name, age, bloodgroup,prev = None,next=None):
@@ -110,8 +112,9 @@ while True:
             print(f"Exited the Waiting Room")
             break
 
+#------------------------------------------------------------------------------------------------------------------------------
 
-**Assignment Part 2: Stack**
+#Assignment Part 2: Stack
 
 Linked List based Stack is implemented in the following cell.
 
@@ -162,7 +165,7 @@ print('Peeked Element: ',st.peek())
 print('Popped Element: ',st.pop())
 print(st.isEmpty())
 
-You can print your stack using this code segment
+'''You can print your stack using this code segment'''
 
 def print_stack(st):
   if st.isEmpty():
@@ -186,7 +189,9 @@ def print_stack(st):
 # print_stack(st)
 # print('------')
 
-Task 1: Diamond Count
+#------------------------------------------------------------------------------------------------------------------------------
+
+#Task 1: Diamond Count
 
 def diamond_count(stack,string):
     #TO DO
@@ -221,10 +226,11 @@ returned_value = diamond_count(stack,string)
 print(f'Number of Diamonds: {returned_value}') #This should print 3
 print('-----------------------------------------')
 
-Task 2: Tower of Blocks
+#------------------------------------------------------------------------------------------------------------------------------
+
+#Task 2: Tower of Blocks
 
 def remove_block(stack, n):
-  #TO DO
     count = 0
     stk = Stack()
 
@@ -236,9 +242,6 @@ def remove_block(stack, n):
     while stk.isEmpty() is False:
         k = stk.pop()
         stack.push(k)
-
-
-
 
 print('Test 01')
 st = Stack()
@@ -277,7 +280,9 @@ print()
 print('======================================')
 print()
 
-Task 3: Stack Reverse
+#------------------------------------------------------------------------------------------------------------------------------
+
+#Task 3: Stack Reverse
 
 def conditional_reverse(stack):
     #To Do
