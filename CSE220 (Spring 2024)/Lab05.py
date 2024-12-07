@@ -3,6 +3,8 @@
 import numpy as np
 import math
 
+#------------------------------------------------------------------------------------------------------------------------------
+
 #Run this cell
 class Node:
   def __init__(self, elem, next = None):
@@ -18,6 +20,8 @@ def create_linked_list(arr):
     tail = new_node
   return head
 
+#------------------------------------------------------------------------------------------------------------------------------
+
 #Very Easy
 
 #a)
@@ -31,9 +35,10 @@ arr1 = np.array([10,34,-8,1,5,6])
 returned_value = recursive_sum(arr1)
 print(f'Sum of even positive elements of an array: {returned_value}') # This should print 50
 
+#------------------------------------------------------------------------------------------------------------------------------
+
 #b)
 def recursive_multiply(head):
-    #To Do
     if head == None: return 1
     elif head.elem % 2 != 0 and head.elem>0:
         return head.elem*recursive_multiply(head.next)
@@ -43,6 +48,8 @@ arr1 = np.array([10,3,-9,1,5,6])
 head= create_linked_list(arr1)
 returned_value = recursive_multiply(head)
 print(f'Product of odd positive elements of a linked list: {returned_value}') # This should print 15
+
+#------------------------------------------------------------------------------------------------------------------------------
 
 #c)
 def nCr(n,r):
@@ -61,6 +68,8 @@ print('========3========')
 returned_value = nCr(48,1)
 print(f'48C1: {returned_value}') # This should print 48
 
+#------------------------------------------------------------------------------------------------------------------------------
+
 #d)
 def count_digit_recursive(num):
     if int(num%10) ==  int(num):
@@ -70,6 +79,8 @@ def count_digit_recursive(num):
 
 returned_value = count_digit_recursive(7508)
 print(f'Number of Digits: {returned_value}') # This should print 4
+
+#------------------------------------------------------------------------------------------------------------------------------
 
 #e)
 def check_prime_recursive(num):
@@ -88,6 +99,8 @@ print('========2========')
 returned_value = check_prime_recursive(391)
 print(f'Prime: {returned_value}') # This should print False
 
+#------------------------------------------------------------------------------------------------------------------------------
+
 #f)
 def recursive_print(head):
     c1 = head
@@ -99,6 +112,8 @@ def recursive_print(head):
 arr1 = np.array([10,20,30,40])
 head= create_linked_list(arr1)
 recursive_print(head) #This should print 40  30  20  10
+
+#------------------------------------------------------------------------------------------------------------------------------
 
 #Easy
 
@@ -114,8 +129,9 @@ print('========2========')
 returned_value = dec_to_binary_recursive(50)
 print(f'Binary Number: {returned_value}') # This should print 110010
 
+#------------------------------------------------------------------------------------------------------------------------------
+
 #b)
-#you may use this for decimal to hexadecimal mapping of 0-15
 def encoding(dec_number): #0<=dec_number<=15
   return '0123456789ABCDEF'[dec_number]
 def dec_to_hexa_recursive(n):
@@ -136,6 +152,8 @@ print(f'Hexadecimal Number: {returned_value}') # This should print 4CE
 print('========2========')
 returned_value = dec_to_hexa_recursive(600)
 print(f'Hexadecimal Number: {returned_value}') # This should print 258
+
+#------------------------------------------------------------------------------------------------------------------------------
 
 #c)
 def print_alphabets_recursive(head):
@@ -158,6 +176,8 @@ def print_alphabets_recursive(head):
 head = create_linked_list(np.array(['b', 'e', 'a', 'u', 't', 'i', 'f', 'u', 'l']))
 print_alphabets_recursive(head) #This will print e a u i u l f t b
 
+#------------------------------------------------------------------------------------------------------------------------------
+
 #d)
 def harmonic_sum(n):
     if n == 0: return 0
@@ -165,6 +185,8 @@ def harmonic_sum(n):
         return ((-1)**(n+1))/n + harmonic_sum(n-1)
 print(f'Harmonic Sum(3): {harmonic_sum(3)}') #This should print 0.8333333333333333
 print(f'Harmonic Sum(4): {harmonic_sum(4)}') #This should print 0.5833333333333333
+
+#------------------------------------------------------------------------------------------------------------------------------
 
 #Medium
 
@@ -179,6 +201,8 @@ print(f'Cards Needed: {hoc_Builder(4)}') #This should print 23
 print(f'Cards Needed: {hoc_Builder(1)}') #This should print 8
 print(f'Cards Needed: {hoc_Builder(0)}') #This should print 0
 
+#------------------------------------------------------------------------------------------------------------------------------
+
 #b)
 def reach_goal(n):
     c = 0
@@ -190,6 +214,8 @@ def reach_goal(n):
 
 steps=reach_goal(21)
 print(f'Number of steps to reach the goal: {steps}')  #This should print 7
+
+#------------------------------------------------------------------------------------------------------------------------------
 
 #Hard
 
@@ -230,6 +256,8 @@ print_pattern(n)
 #10 5 0 5 10
 #   5 0 5
 
+#------------------------------------------------------------------------------------------------------------------------------
+
 #b)
 def merge_Lists(mid_list,final_list,combined_list):
     if mid_list == [] and final_list == [] : return combined_list
@@ -260,6 +288,7 @@ merged_list=merge_Lists(mid,final,[])
 print(merged_list)
 # This should print [28, 24, 20, 12, 11, 10]
 
+#------------------------------------------------------------------------------------------------------------------------------
 
 #Very Hard
 
@@ -275,6 +304,8 @@ given_list = [1, [2, [3, [4], 5], 6], 7, 8, [9, [[10, 11], 12], 13], 14, [15, [1
 output_list = flatten_List(given_list, []) # Initial empty list is sent for update
 print(output_list)
 #This should print [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+
+#------------------------------------------------------------------------------------------------------------------------------
 
 #Bonus Task
 
