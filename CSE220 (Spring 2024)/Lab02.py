@@ -24,7 +24,7 @@ def print_matrix(m):
 #Task 1: Zigzag Walk
 
 def walk_zigzag(floor):
-  #TO DO
+   
   row, col = floor.shape[0], floor.shape[1]
   idx = 0
   for i in range(col):
@@ -81,7 +81,7 @@ walk_zigzag(floor)
 #Task 2: Row Rotation Policy of BRACU Classroom
 
 def row_rotation(exam_week, seat_status):
-    #To Do
+     
     row, col = seat_status.shape[0],seat_status.shape[1]
     idx = 0
     arr1 = np.array([None]*col,dtype = str)
@@ -116,7 +116,7 @@ print(f'Your friend AA will be on row {row_number}') #This should print Your fri
 #Task 3: Matrix Manipulation
 
 def reverse_Matrix(matrix):
-    #TO DO
+     
     row, col = len(matrix), len(matrix[0])
     arr1 = np.array([[None]*col]*row)
     idx = 0
@@ -152,7 +152,7 @@ print_matrix(reversed_matrix)
 #Task 4: Chess Piece
 
 def show_knight_move(knight):
-  #To Do
+   
   arr = np.array([[0]*8]*8)
   row1, col1 = len(arr), len(arr[0])
   rowpos, colpos = knight[0], knight[1]
@@ -193,7 +193,6 @@ print_matrix(chess_board)
 
 def compress_matrix(mat):
     row,col = len(mat), len(mat[1])
-    #arr = np.array([[None]*(col//2)]*(row//2))
     arr = np.zeros((row//2,col//2),dtype = int)
     idx = 0
 
