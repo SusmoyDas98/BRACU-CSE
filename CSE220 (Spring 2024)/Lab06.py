@@ -2,7 +2,7 @@
 
 import numpy as np
 
-Task 1
+#Task 1
 class vehicleNodes:
   def __init__(self, brand, vehicle_type, rent, passenger, next = None):
     self.brand=brand
@@ -98,7 +98,7 @@ vt.print_vehicle_hashtable()
 #------------------------------------------------------------------------------------------------------------------------------
 
 
-Task 2
+#Task 2
 
 #Complete the following methods:
 
@@ -163,7 +163,7 @@ class Hashtable:
             if head.key == s[0] : return "Found"
             return finder(head.next)
         return finder(a)
-         #return "Found"
+
 
 
 
@@ -198,7 +198,7 @@ print(f'(Edgar, 320) {result}')
 
 #------------------------------------------------------------------------------------------------------------------------------
 
-Task 3
+#Task 3
 
 Implement the __hash_function() and insert() methods
 
@@ -231,7 +231,7 @@ class HashTable:
     if len(key)%2 == 0 : return functionmaker(key, 0, 0) % len(self.ht)
     elif len(key)%2 != 0: return functionmaker(key, 1, 0) % len(self.ht)
 
-  #Do it by yourself
+  
   def insert(self, key, value):
     a = Node((key,value), None)
     def finder(head, val, node):
@@ -280,7 +280,7 @@ ht.show()
 
 #------------------------------------------------------------------------------------------------------------------------------
 
-Task 4
+#Task 4
 
 Implement the __hash_function() and remove() methods
 
@@ -320,13 +320,13 @@ class Hashtable:
       idx += 1
 
 
-  #Do it by yourself
+   
   def __hash_function(self, key):
     return (key+3)%6
 
 
 
-  #Do it by yourself
+   
   def remove(self, key):
     indx = self.__hash_function(key)
     def finder(head, key)    :
