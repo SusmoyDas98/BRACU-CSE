@@ -27,7 +27,9 @@ def tree_construction(arr, i = 1):
 root2 = tree_construction([None, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', None, None, None, 'I', 'J', None, 'k'])
 inorder(root2)
 
-Task 1
+#------------------------------------------------------------------------------------------------------------------------------
+
+#Task 1
 
 def convert_mirror(root):
   if root == None: return
@@ -57,7 +59,9 @@ root2 = convert_mirror(root)
 print('Mirrored Tree Inorder Traversal: ', end = ' ')
 inorder(root2) #Mirrored Tree Inorder Traversal:  30 10 60 20 40
 
-Task 2
+#------------------------------------------------------------------------------------------------------------------------------
+
+#Task 2
 
 def smallest_level(root):
     dic = {}
@@ -83,7 +87,9 @@ print()
 print('Level Wise Smallest Value: ', end = ' ')
 print(smallest_level(root)) #Level Wise Smallest Value:  {0: 4, 1: 2, 2: -5}
 
-Task 3
+#------------------------------------------------------------------------------------------------------------------------------
+
+#Task 3
 
 def inorder_predecessor(root, x):
     def predecessor(root):
@@ -99,10 +105,6 @@ def inorder_predecessor(root, x):
             return predecessor(root.left)
         else:
             return root
-
-
-
-
 
 #DRIVER CODE
 root = BTNode(20)
@@ -129,7 +131,9 @@ print()
 x = root
 print(f'Inorder predecessor of node {x.elem}: {inorder_predecessor(root, x).elem}') #Inorder predecessor of node 20: 14
 
-Task 4
+#------------------------------------------------------------------------------------------------------------------------------
+
+#Task 4
 
 def LCA(root, x, y):
     if root == None: return
@@ -142,8 +146,6 @@ def LCA(root, x, y):
     elif x.elem>root.elem and y.elem>root.elem:
         return LCA(root.right, x, y)
 #DRIVER CODE
-#Write by yourself from the given tree
-#check all the sample inputs given
 root = BTNode(15)
 n1 = BTNode(10)
 n2 = BTNode(25)
@@ -166,7 +168,9 @@ print(f"LCA({n9.elem},{n10.elem}) = {LCA(root, n9, n10)}")
 print(f"LCA({n5.elem},{n2.elem}) = {LCA(root, n5, n2)}")
 print(f"LCA({n1.elem},{n4.elem}) = {LCA(root, n1, n4)}")
 
-Task 5
+#------------------------------------------------------------------------------------------------------------------------------
+
+#Task 5
 
 import numpy as np
 def sumTree(root):
@@ -217,7 +221,9 @@ node8.right = node11
 
 print(sumTree(root1)) #This should print 15
 
-Task 6
+#------------------------------------------------------------------------------------------------------------------------------
+
+#Task 6
 
 def swap_child(root, level, M):
     if root == None: return
@@ -252,8 +258,9 @@ root2 = swap_child(root, 0, 2)
 print('Swapped Tree Inorder Traversal: ', end = ' ')
 inorder(root2)  #Swapped Tree Inorder Traversal: J F C A I E B G D H
 
+#------------------------------------------------------------------------------------------------------------------------------
 
-Task 7
+#Task 7
 
 def subtract_summation(root):
     def adder(root):
@@ -282,7 +289,9 @@ n2.left, n2.right = n7,  n8
 n8.left, n8.right = n9, n10
 print(subtract_summation(root)) #This should print 111
 
-Bonus Task
+#------------------------------------------------------------------------------------------------------------------------------
+
+#Bonus Task
 
 def level_sum(root):
     def adder(root, level, odd):
