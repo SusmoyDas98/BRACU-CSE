@@ -112,7 +112,7 @@ findGroups(money, fare) # This should print
 
 # Task 04: Get Those Hobbies
 def analyzeHobbies(*participants): #(* arguments) is used for variable number of parameters
-    # TO DO
+     
     # Print outputs inside the method
     x = 0
     for i in range(len(participants)):
