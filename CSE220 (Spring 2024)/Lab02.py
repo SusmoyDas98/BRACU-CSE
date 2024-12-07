@@ -19,7 +19,7 @@ def print_matrix(m):
     print()
     print('-'*(c-col))
 
-
+#------------------------------------------------------------------------------------------------------------------------------
 
 #Task 1: Zigzag Walk
 
@@ -76,6 +76,8 @@ walk_zigzag(floor)
 # 4 9
 # 1 8
 
+#------------------------------------------------------------------------------------------------------------------------------
+
 #Task 2: Row Rotation Policy of BRACU Classroom
 
 def row_rotation(exam_week, seat_status):
@@ -108,6 +110,8 @@ print_matrix(seat_status)
 print()
 row_number=row_rotation(exam_week, seat_status) #This should print modified seat status after rotation
 print(f'Your friend AA will be on row {row_number}') #This should print Your friend AA will be on row 2
+
+#------------------------------------------------------------------------------------------------------------------------------
 
 #Task 3: Matrix Manipulation
 
@@ -143,6 +147,7 @@ print_matrix(reversed_matrix)
 #|  4 |  0  |  8  |  14  |
 #-------------------------
 
+#------------------------------------------------------------------------------------------------------------------------------
 
 #Task 4: Chess Piece
 
@@ -182,6 +187,8 @@ print_matrix(chess_board)
 #| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 #-----------------------------------------
 
+#------------------------------------------------------------------------------------------------------------------------------
+
 #Task 5: Matrix Compression
 
 def compress_matrix(mat):
@@ -217,6 +224,8 @@ print_matrix(returned_array)
 #--------------
 #|  2  |  10  |
 #--------------
+
+#------------------------------------------------------------------------------------------------------------------------------
 
 #Task 6: Game Arena
 
@@ -292,10 +301,6 @@ def play_game(arena):
         print(f"Points Gained: {sum}. Your team is out.")
 
 
-
-
-
-
 arena=np.array([[0,2,2,0],
                 [50,1,2,0],
                 [2,2,2,0],
@@ -316,6 +321,10 @@ print_matrix(arena)
 play_game(arena)
 #This should print
 #Points Gained: 14. Your team has survived the game.
+
+
+#------------------------------------------------------------------------------------------------------------------------------
+
 
 #Bonus Task: Primary vs Secondary Diagonal
 
