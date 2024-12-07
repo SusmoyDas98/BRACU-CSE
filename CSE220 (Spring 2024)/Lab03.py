@@ -26,8 +26,9 @@ def printLinkedList(head):
     temp = temp.next
   print()
 
+#------------------------------------------------------------------------------------------------------------------------------
 
-Task 1: Building Blocks
+#Task 1: Building Blocks
 
 def check_similar(building_1, building_2):
     c1, c2 = building_1, building_2
@@ -89,7 +90,9 @@ returned_value = check_similar(building_1, building_2)
 print(returned_value) #This should print 'Not Similar'
 print()
 
-Task 2: Remove Compartment
+#------------------------------------------------------------------------------------------------------------------------------
+
+#Task 2: Remove Compartment
 
 def remove_compartment(head,n):
     j = 0
@@ -135,7 +138,9 @@ print('Changed Compartment Sequence: ', end = ' ')
 printLinkedList(head) #This should print 15-->34-->41-->56-->72
 print()
 
-Task 3: Assemble Conga Line
+#------------------------------------------------------------------------------------------------------------------------------
+
+#Task 3: Assemble Conga Line
 
 def assemble_conga_line(conga_line):
   c = conga_line
@@ -165,7 +170,9 @@ returned_value = assemble_conga_line(conga_line)
 print(returned_value) #This should print False
 print()
 
-Task 4: Word Decoder
+#------------------------------------------------------------------------------------------------------------------------------
+
+#Task 4: Word Decoder
 
 def word_Decoder(head):
     c = head
@@ -215,9 +222,9 @@ result = word_Decoder(head)
 print("Decoded Word:")
 printLinkedList(result)    #This should print None→N
 
+#------------------------------------------------------------------------------------------------------------------------------
 
-
-Task 5: Alternate Merge
+#Task 5: Alternate Merge
 
 def alternate_merge(head1, head2):
     c1, c2 = head1, head2
@@ -287,8 +294,9 @@ head = alternate_merge(head1, head2)
 print("Merged Linked List:")
 printLinkedList(head)    #This should print   4-> 8 → 2-> 6 → -2 → 5 → -4 -> -3
 
+#------------------------------------------------------------------------------------------------------------------------------
 
-Task 6: Sum of Nodes
+#Task 6: Sum of Nodes
 
 def sum_dist(head, arr):
     c1 = head
@@ -324,7 +332,9 @@ returned_value = sum_dist(LL1, dist)
 print(f'Sum of Nodes: {returned_value}') #This should print Sum of Nodes: 4
 print()
 
-Bonus Task: ID Generator
+#------------------------------------------------------------------------------------------------------------------------------
+
+'''Bonus Task: ID Generator'''
 
 def idGenerator(head1, head2, head3):
     c1, c2, c3 = head1, head2, head3
@@ -362,8 +372,6 @@ def idGenerator(head1, head2, head3):
             tail = obj1
             c1 = c1.next
             z+=1
-#        elif c1.next == None:
-#            c1.next = head4
     return head5
 print('==============Test Case 1=============')
 head1 = createList(np.array([0,3,2,2]))
