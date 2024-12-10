@@ -116,7 +116,7 @@ while True:
 
 #Assignment Part 2: Stack
 
-Linked List based Stack is implemented in the following cell.
+'''Linked List based Stack is implemented in the following cell.'''
 
 class Node:
   def __init__(self,elem=None,next=None):
@@ -133,7 +133,6 @@ class Stack:
 
   def pop(self):
     if self.__top == None:
-      #print('Stack Underflow')
       return None
     e = self.__top
     self.__top = self.__top.next
@@ -141,7 +140,6 @@ class Stack:
 
   def peek(self):
     if self.__top == None:
-      #print('Stack Underflow')
       return None
     return self.__top.elem
 
@@ -176,7 +174,7 @@ def print_stack(st):
     print(' |')
   else:
     print('|')
-  #print('------')
+
   print_stack(st)
   st.push(p)
 
