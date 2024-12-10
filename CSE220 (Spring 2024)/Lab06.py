@@ -282,7 +282,7 @@ ht.show()
 
 #Task 4
 
-Implement the __hash_function() and remove() methods
+'''Implement the __hash_function() and remove() methods'''
 
 class Node_pair:
   def __init__(self, key, value, next = None):
