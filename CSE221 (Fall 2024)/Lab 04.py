@@ -2,8 +2,10 @@
 
 '''Graph Representation'''
 
-
 # (A)
+
+'''Adjoint matrix'''
+
 with open("input1a.txt",'r') as file1, open('output1a.txt','w') as file2:
     N, M = map(int,file1.readline().strip().split())
     adj_matrix = [[0 for i in range(N+1)] for i in range(N+1)]
@@ -18,6 +20,8 @@ with open("input1a.txt",'r') as file1, open('output1a.txt','w') as file2:
 #------------------------------------------------------------------------------------------------------------------------------
 
 # (B)
+
+'''Adjoint List'''
 
 '''USING LIST'''
 
