@@ -1,6 +1,6 @@
 ''' Lab Assignment 05 '''
 
-'''Task 1'''
+''' Task 1 '''
 
 def dijkstra_algorithm(source):
     import heapq
@@ -39,7 +39,7 @@ with open('input1.txt','r') as file1, open('output1.txt','w') as file2:
 #------------------------------------------------------------------------------------------------------------------------------
 
 
-'''Task 2'''
+''' Task 2 '''
 
 
 def dijkstra_algorithm(source):
@@ -87,7 +87,7 @@ with open('input2.txt','r') as file1, open('output2.txt','w') as file2:
 #------------------------------------------------------------------------------------------------------------------------------
 
 
-'''#Task 3'''
+''' Task 3 '''
 
 
 def minimum_danger(source):
@@ -125,7 +125,7 @@ with open('input3.txt','r') as file1, open('output3.txt','w') as file2:
 #------------------------------------------------------------------------------------------------------------------------------
 
 
-'''Task 4'''
+''' Task 4 '''
 
 
 def find_parent(node):
@@ -165,7 +165,7 @@ with open('input4.txt','r') as file1, open('output4.txt','w') as file2:
 #------------------------------------------------------------------------------------------------------------------------------
 
 
-'''Task 5'''
+''' Task 5 '''
 
 
 def find_parent(node):
