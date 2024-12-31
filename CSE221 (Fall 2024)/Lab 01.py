@@ -1,6 +1,8 @@
-# Lab 01
-# Task 1
-# a
+''' Lab 01 '''
+''' Task 1 '''
+
+
+''' a'''
 with open("input1a.txt", "r") as file1, open('output1a.txt', 'w') as file2:
     lines = file1.readlines()
     N = int(lines[0].strip())
@@ -11,7 +13,8 @@ with open("input1a.txt", "r") as file1, open('output1a.txt', 'w') as file2:
         else:
             file2.write(f"{current} is an Odd number.\n")
 
-# b
+
+''' b '''
 with open('input1b.txt','r') as file1, open('output1b.txt', 'w') as file2:
     lines = file1.readlines()
     N = int(lines[0].strip())
@@ -29,7 +32,8 @@ with open('input1b.txt','r') as file1, open('output1b.txt', 'w') as file2:
 #------------------------------------------------------------------------------------------------------------------------------
 
 
-# Task 2
+''' Task 2 '''
+
 def bubbleSort(arr):
     for i in range(len(arr)-1):
         status = False
@@ -49,7 +53,8 @@ with open('input2.txt','r') as file1, open('output2.txt', 'w') as file2:
 #------------------------------------------------------------------------------------------------------------------------------
 
 
-# Task 3
+''' Task 3 '''
+
 def selection_sort(arr1, arr2):
     for i in range(len(arr1)):
         current = i
@@ -68,7 +73,8 @@ with open('input3.txt', 'r') as file1, open('output3.txt', 'w') as file2:
 #------------------------------------------------------------------------------------------------------------------------------
 
 
-#Task 4
+''' Task 4 '''
+
 def sorting(arr):
     for i in range(len(arr)):
         current = i
