@@ -1,4 +1,7 @@
-# Task 1
+''' Lab Assignment 3 '''
+
+''' Task 1 '''
+
 def merge(a, b):
     i, j = 0, 0
     final = []
@@ -34,7 +37,8 @@ with open('input1.txt', 'r') as file1,open('output1.txt','w') as file2:
 
 #------------------------------------------------------------------------------------------------------------------------------
 
-#Task 2
+''' Task 2 '''
+
 def maximum(arr):
     if len(arr) <= 1:
         return arr[0]
@@ -53,7 +57,9 @@ with open('input2.txt', 'r') as file1,open('output2.txt','w') as file2:
 
 #------------------------------------------------------------------------------------------------------------------------------
 
-# Task 3
+
+''' Task 3 '''
+
 def counter(a, b):
     i, j = 0, 0
     final = []
@@ -92,7 +98,10 @@ with open('input3.txt', 'r') as file1,open('output3.txt','w') as file2:
 
 #------------------------------------------------------------------------------------------------------------------------------
 
-#Task 4
+
+''' Task 4 '''
+
+
 def max_value_finder(left, right):
     i,j = 0, 0
     l = max(left)
@@ -121,7 +130,10 @@ with open('input4.txt', 'r') as file1,open('output4.txt','w') as file2:
     
 #------------------------------------------------------------------------------------------------------------------------------
 
-#Task 5
+
+''' Task 5 '''
+
+
 def partition(arr, start, end):
     pivot = arr[end]
     indx = start
@@ -145,7 +157,10 @@ with open('input5.txt', 'r') as file1,open('output5.txt','w') as file2:
 
 #------------------------------------------------------------------------------------------------------------------------------
 
-#Task 6
+
+'''  Task 6 '''
+
+
 def partition(arr, start, end):
     pivot = arr[end]
     indx = start
