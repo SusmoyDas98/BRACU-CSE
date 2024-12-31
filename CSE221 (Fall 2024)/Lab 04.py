@@ -1,8 +1,10 @@
-#Task 1
+'''   Lab Assignment 04  '''
+
+''' Task 1 '''
 
 '''Graph Representation'''
 
-# (A)
+''' (A) '''
 
 '''Adjoint matrix'''
 
@@ -19,7 +21,8 @@ with open("input1a.txt",'r') as file1, open('output1a.txt','w') as file2:
 
 #------------------------------------------------------------------------------------------------------------------------------
 
-# (B)
+
+''' (B) '''
 
 '''Adjoint List'''
 
@@ -44,7 +47,11 @@ In case of the Adjacency List we add to append the (v,w) in u index of the list 
 
 b) If we have parallel edges we cannot express the graph using the Adjacency Matrix. Becasue at each adj_list[u][v] it can only store one value.'''
 
-# (B)
+
+#------------------------------------------------------------------------------------------------------------------------------
+
+
+''' (B) '''
 
 '''USING DICTIONARY'''
 
@@ -64,7 +71,7 @@ with open("input1b.txt",'r') as file1, open('output1b.txt','w') as file2:
 
 #------------------------------------------------------------------------------------------------------------------------------
 
-#Task 2
+''' Task 2 '''
 
 '''Graph Traversal Using BFS'''
 
@@ -102,7 +109,7 @@ with open("input2.txt",'r') as file1, open('output2.txt','w') as file2:
 
 #------------------------------------------------------------------------------------------------------------------------------
 
-#Task 3
+''' Task 3 '''
 
 '''Graph Traversal Using DFS'''
 
@@ -135,7 +142,7 @@ with open("input3.txt",'r') as file1, open('output3.txt','w') as file2:
 
 #------------------------------------------------------------------------------------------------------------------------------
 
-#Task  4
+'''  Task  4 '''
 
 '''Cycle Finding'''
 
@@ -176,7 +183,7 @@ b) Yes, by checking if the given graph is a bipartite graph or not.'''
 #------------------------------------------------------------------------------------------------------------------------------
 
 
-#Task 5
+'''  Task 5 '''
 
 '''Find the shortest path'''
 
@@ -225,7 +232,7 @@ with open("input5.txt",'r') as file1, open('output5.txt','w') as file2:
 #------------------------------------------------------------------------------------------------------------------------------
 
 
-#Task 6
+'''  Task 6 '''
 
 '''Flood Fill'''
 
@@ -274,9 +281,13 @@ with open("input6.txt",'r') as file1, open('output6.txt', 'w') as file2:
 
 '''TIME COMPLEXITY O(NM)'''
 
+
 #------------------------------------------------------------------------------------------------------------------------------
 
-#Task 7
+
+'''  Task 7  '''
+
+
 def longest_path_finder(source):
     from collections import deque
     queue = deque([])
@@ -312,7 +323,10 @@ with open("input7.txt",'r') as file1, open('output7.txt','w') as file2:
 
 #------------------------------------------------------------------------------------------------------------------------------
 
-#Task 8
+
+''' Task 8 '''
+
+
 def bipartite(source):
     from collections import deque
     queue = deque([])
@@ -357,9 +371,9 @@ with open('input8.txt', 'r') as file1, open("output8.txt","w")  as file2:
 #------------------------------------------------------------------------------------------------------------------------------
 
 
-#Task 9
+''' Task 9 '''
 
-#A (USING DFS)
+'''A (USING DFS)'''
 
 def sequence_maker_DFS(source):
     color[source] = 1
@@ -403,7 +417,7 @@ with open('input9a.txt','r') as file1, open('output9a.txt','w') as file2:
 
 
 
-#B (Unsing BFS)
+'''B (Unsing BFS)'''
 
 def sequence_maker_BFS(source):
     from collections import deque
@@ -442,7 +456,9 @@ with open('input9b.txt','r') as file1, open('output9b.txt','w') as file2:
 #------------------------------------------------------------------------------------------------------------------------------
 
 
-#Task 10
+''' Task 10 '''
+
+
 def lexicographic_sequence_maker_BFS(source):
     import heapq
     queue = []
