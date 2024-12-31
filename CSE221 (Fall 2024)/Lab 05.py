@@ -201,6 +201,6 @@ with open('input5.txt','r') as file1, open('output5.txt','w') as file2:
     size = [1 for i  in range(N+1)]
     total_cost = 0
     Kruskal_algorithm(adj_list)
-    print(total_cost)
+    file2.write(f"{total_cost}")
     
 
