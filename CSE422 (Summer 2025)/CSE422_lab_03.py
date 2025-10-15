@@ -82,6 +82,14 @@ with open('input1.txt', 'r') as file1, open('output1.txt', 'w') as file2 :
     selected_gene, utility = D(  pool, gene, True, target, alpha, beta, weights)
     file2.write(f"Best gene sequence generated: {selected_gene} \nUtility score: {utility}")
 
+
+
+
+#-------------------------------------------------------------------------------------------------------------------
+
+
+
+
 #Task 2
 
 class Gene_Designer:
@@ -188,4 +196,5 @@ with open('input1.txt', 'r') as file1, open('output1.txt', 'w') as file2 :
         file2.write(f"YES\nWith special nucleotide\nBest gene sequence generated: {selected_gene_boosted},\nUtility score: {utility_boosted}")
     else:
         file2.write(f"No\nWith special nucleotide\nBest gene sequence generated: {selected_gene_boosted},\nUtility score: {utility_boosted}")
+
 
