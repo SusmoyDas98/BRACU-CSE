@@ -97,6 +97,10 @@ with open('input1.txt',"r") as file1, open('output1.txt', 'w') as file2 :
         parent.append(prnt)
     file2.write(maze_solver(a, b, c, d))
 
+
+#-------------------------------------------------------------------------------------------------------------------
+
+
 # PART 2
 
 from collections import deque
@@ -159,4 +163,5 @@ with open('input2.txt','r') as file1 , open('output2.txt', 'w') as file2:
         file2.write("1")
     else:
         inadmissible_nodes = Admissibility_checker(adj_list, b, heuristics)[1]
+
         file2.write(f"{0}\nHere nodes {','.join(inadmissible_nodes)} are inadmissible.")
